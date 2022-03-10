@@ -23,9 +23,9 @@ public class Refactorizacion {
         vector[3] = 8;
         Prueba posicion = new Prueba();
         posicion.valor = 10;
-        posicion.modificar(vector);
-        posicion.borrar(vector);
-        posicion.insertar(vector);
+        posicion.modificar(vector, 0);
+        posicion.borrar(vector, 0);
+        posicion.insertar(vector, 0);
     }
 
 }
