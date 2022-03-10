@@ -81,14 +81,14 @@ public class Prueba {
 
     void BorraElemento(int[] v, int p, int i) {
         System.out.println("Elemento a borrar=" + v[p]);
-        for (i = p; i < v.length - 1; i--) {
+        for (i = p; i > v.length - 1; i--) {   //CORREGIR//
             v[i] = v[i + 1];
         }
     }
 
     void InsertaElemento(int i, int[] v, int p) {
         System.out.println("Elemento a insertar=" + this.va);
-        for (i = v.length - 1; i > p; i++) {
+        for (i = v.length - 1; i < p; i++) { //CORREGIR//
             v[i] = v[i - 1];
         }
         v[p] = this.va;
