@@ -16,16 +16,16 @@ public class Refactorizacion {
      */
     public static void main(String[] args) {
 // TODO code application logic here
-        int[] v = new int[5];
-        v[0] = 2;
-        v[1] = 4;
-        v[2] = 6;
-        v[3] = 8;
-        Prueba p = new Prueba();
-        p.va = 10;
-        p.mo(v);
-        p.bo(v);
-        p.in(v);
+        int[] vector = new int[5];
+        vector[0] = 2;
+        vector[1] = 4;
+        vector[2] = 6;
+        vector[3] = 8;
+        Prueba posicion = new Prueba();
+        posicion.valor = 10;
+        posicion.modificar(vector);
+        posicion.borrar(vector);
+        posicion.insertar(vector);
     }
 
 }
