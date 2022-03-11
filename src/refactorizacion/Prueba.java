@@ -31,11 +31,7 @@ System.out.println("Elemento a modificar=" + vector[posicion]);
 vector[posicion] = this.valor;
         }
 //Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
-            System.out.print(vector[i] + ",");
-        }
-        System.out.println("}");
+        Visualizar(longitud, vector);
     }
     //metodo que borra el elemento de la posicion p desplazando a la izquierda todos los elementos
     public int longitud;
@@ -58,14 +54,18 @@ vector[posicion] = this.valor;
                 vector[i] = vector[i + 1];
             }
         }
-//Mostramos los elementos del array
+        Visualizar(longitud, vector);
+    }
+//metodo que inserta un elemento en la posicion p desplazando a la derecha todos los elementos
+
+    public void Visualizar(int longitud1, int[] vector) {
+        //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
+        for (int i = 0; i < longitud1; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
     }
-//metodo que inserta un elemento en la posicion p desplazando a la derecha todos los elementos
 
     public void insertar(int[] vector, int longitudActual) {
         int posicion = 1, i;
@@ -87,11 +87,7 @@ vector[posicion] = this.valor;
             vector[posicion] = this.valor;
         }
 //Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
-            System.out.print(vector[i] + ",");
-        }
-        System.out.println("}");
+        Visualizar(longitud, vector);
     }
 
 
