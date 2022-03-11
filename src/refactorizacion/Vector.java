@@ -9,27 +9,10 @@ package refactorizacion;
  *
  * @author Diurno
  */
-public class NoCambiaLongitud extends Vector{
-
-    /**
-     * @return the valor
-     */
-    public int getValor() {
-        return valor;
-    }
-
-    /**
-     * @param valor the valor to set
-     */
-    public void setValor(int valor) {
-        this.valor = valor;
-    }
-
-    private int valor;
-//metodo que modifica el contenido de la posicion p de un array con el valor pasado
-    //metodo que borra el elemento de la posicion p desplazando a la izquierda todos los elementos
-    public int longitud;
-
+public class Vector {
+    
+    protected int valor;
+    //metodo que modifica el contenido de la posicion p de un array con el valor pasado
 
     public void Visualizar(int longitud1, int[] vector) {
         //Mostramos los elementos del array
@@ -39,8 +22,5 @@ public class NoCambiaLongitud extends Vector{
         }
         System.out.println("}");
     }
-
-
-
-
+    
 }
