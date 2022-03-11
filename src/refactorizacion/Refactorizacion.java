@@ -22,7 +22,7 @@ public class Refactorizacion {
         vector[2] = 6;
         vector[3] = 8;
         Prueba posicion = new Prueba();
-        posicion.valor = 10;
+        posicion.setValor(10);
         posicion.modificar(vector, 0, 1);
         posicion.borrar(vector, 0, 1);
         posicion.insertar(vector, 0, 1);
