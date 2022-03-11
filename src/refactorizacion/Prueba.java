@@ -45,21 +45,22 @@ vector[posicion] = this.valor;
 //mostramos su contenido
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        int longitud = vector.length;
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
 //Borramos el elemento
-        if (posicion < vector.length) {
+        if (posicion < longitud) {
             System.out.println("Elemento a borrar=" + vector[posicion]);
-            for (i = posicion; i > vector.length - 1; i--) {
+            for (i = posicion; i > longitud - 1; i--) {
                 //CORREGIR//
                 vector[i] = vector[i + 1];
             }
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
@@ -71,14 +72,15 @@ vector[posicion] = this.valor;
 //mostramos su contenido
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        int longitud = vector.length;
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
 //Borramos el elemento
-        if (posicion < vector.length) {
+        if (posicion < longitud) {
             System.out.println("Elemento a insertar=" + this.valor);
-            for (i = vector.length - 1; i < posicion; i++) {
+            for (i = longitud - 1; i < posicion; i++) {
                 //CORREGIR//
                 vector[i] = vector[i - 1];
             }
@@ -86,7 +88,7 @@ vector[posicion] = this.valor;
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
